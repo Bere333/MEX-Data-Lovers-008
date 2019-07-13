@@ -2,7 +2,7 @@ const data = POKEMON.pokemon;
 
 //Código para filtrar por tipos
 let imSelection = document.getElementById("select-type");
-imSelection.addEventListener("click", () => {
+imSelection.addEventListener("change", () => {
 let imValue = imSelection.options[imSelection.selectedIndex].value;
 //console.log(typeof imValue);
 //console.log(imValue);
@@ -13,13 +13,13 @@ let pokeFilterData = window.data.filterData(data, imValue);
 //Ordenar data filtrada
   
   let imOrdenation = document.getElementById("select-order");
-  imOrdenation.addEventListener("click", () => {
+  imOrdenation.addEventListener("change", () => {
   let imValueOrder = (imOrdenation.options[imOrdenation.selectedIndex].value);
   console.log(imValueOrder);
   console.log(typeof imValueOrder);
 
   let imAscent = document.getElementById("select-sortOrder");
-  imAscent.addEventListener("click", () => {
+  imAscent.addEventListener("change", () => {
     let sorValue = (imAscent.options[imAscent.selectedIndex].value);
     console.log(sorValue);
     
@@ -36,7 +36,7 @@ let pokeFilterData = window.data.filterData(data, imValue);
     let pokeImg = element.img;
     let pokeType = element.type;
     let pokeWeaknesses = element.weaknesses;
-    let pokeNextEvolution = element.next_evolution;
+    //let pokeNextEvolution = element.next_evolution;
   
     str += `
     <div class="flip-container"><center>
@@ -53,14 +53,14 @@ let pokeFilterData = window.data.filterData(data, imValue);
     </div>
     </center></div>
     `;
-  })
+  });
   root.innerHTML = str; 
     
-  } )
+  } );
   
   
   
   
-  })
+  });
 });
 
