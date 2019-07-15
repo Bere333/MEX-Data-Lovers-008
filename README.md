@@ -1,6 +1,6 @@
-# BIBLIOTECA DE POKEMONES
+# BIBLIOTECA POKÉMON
 
-## NOMBRE DE LA PÁGINA WEB: Biblioteca de Pokemones
+## NOMBRE DE LA PÁGINA WEB: Biblioteca Pokémon
 
 ## DESCRIPCIÓN DE LA PÁGINA WEB:
 Biblioteca de pokemones es una aplicación web para aquellos principiantes en Pokémon Go que desean conocer las características de los pokemones por simple curiosidad o por diversión, también es útil como una introducción a la temática Pokémon Go.
@@ -45,6 +45,11 @@ Se diseñó una primera encuesta que incluyó una pregunta que consultaba si a l
 
 ![Gráfico 9](img/img_9.png)
 
+## USER PERSONA
+
+La mayor cantidad de personas que respondieron la encuesta fueron hombres de entre 25-30 años, así damos con nuestro User Persona: Juan de 25 años… el no conoce de pokémon, pero cuando se lanzó el videjouego de realidad aumentada pokémon go basado en la localización decidió descargarlo y adentrarse en este mundo… le gustaba atrapar pokemones y hasta ahí todo iba bien, le parecía muy divertido, pero cuando se enfrentó a alguien más y perdió sus pokemones decidió indagar más sobre las nombres, tipos, y características….
+Ahí entra biblioteca pokémon, página web para satisfacer las necesidades de Juan y no solo de él sino de todos aquellos curiosos de este mundo y que necesiten un primer empujón para dar el gran salto en pokémon… 
+
 ## HISTORIAS DE USUARIO
 
 - Como usuario, quiere saber los nombres de los pokemones
@@ -81,7 +86,7 @@ Se realizó un prototipo de Alta fidelidad con ayuda del editor de diseño Figma
 
 En base a este diseño, se creo el prototipo de alta fidelidad en Marvel que se puede consultar [aquí](https://marvelapp.com/c49cj3e/screen/58800471) 
 
-## Testeos de usabilidad
+## Testeos de usabilidad (prototipo)
 
 El prototipo anterior fue testeado por compañeras de Laboratoria en Slack y se obtuvieron diferentes feedback:
 
@@ -95,6 +100,15 @@ El prototipo anterior fue testeado por compañeras de Laboratoria en Slack y se 
 
 Se siguieron los líneamientos para mostrar, filtrar, ordenar y hacer un cálculo estadístico con la data de Pokémon. 
 Se comenzó por mostrar la data y con la ayuda de la lógica fue posible obtener una función pura para filtrar, ordenar y realizar un cálculo de promedio sobre el peso de los pokemones.
+
+## Testeos de usabilidad (página web)
+
+La página web "Biblioteca Pokémon" fue testeada por compañeras de Laboratoria y se obtuvo el siguiente feedback:
+
+- Tiene una interfaz sencilla y fàcil de usar
+- Se sugiere alinear los input de filtrado, ordenado y estadísticas 
+- La ventana de información es muy útil
+- Son necesarias más estadísticas
 
 ## Test 
 
