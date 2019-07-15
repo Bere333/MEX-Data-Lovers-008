@@ -83,9 +83,21 @@ imSelectCompute.addEventListener('change', () => {
   //let computeValue = (imSelectCompute.options[imSelectCompute.selectedIndex].value);
   const rootCompute = document.getElementById("rootCompute");
   let pokeDataCompute = window.data.computeStats(data);
-  rootCompute.innerHTML = "El promedio de peso entre poKemones es de " + pokeDataCompute;
-  console.log(pokeDataCompute);
-  console.log(`${pokeDataCompute}`);
+  let str = `
+    <div class="flip-container"><center>
+    <div class="card">
+    <div class="front">
+    <h2>Promedio de Peso</h2>
+    </div>
+    <div class="back">
+    <p>El promedio de peso entre pokemones es de: ${pokeDataCompute}</p>
+    </div>
+    </div>
+    </center></div>
+    `;
+  rootCompute.innerHTML = str;
+  //console.log(pokeDataCompute);
+  //console.log(`${pokeDataCompute}`);
   
   //`${pokeDataCompute}`;
   

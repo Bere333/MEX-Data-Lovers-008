@@ -67,6 +67,7 @@ computeStats:(data) => {
   }, {weight: 0});
   let sumPromedio = sumCompute.weight / data.length;
   return sumPromedio;
+  //Intento fallido
   //console.log(sumCompute);
   /*
   let sumP = "";
