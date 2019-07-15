@@ -91,6 +91,18 @@ El prototipo anterior fue testeado por compañeras de Laboratoria en Slack y se 
 - El diseño es sencillo y bonito
 - Es intuitivo 
 
+## Diseño de código
+
+Se siguieron los líneamientos para mostrar, filtrar, ordenar y hacer un cálculo estadístico con la data de Pokémon. 
+Se comenzó por mostrar la data y con la ayuda de la lógica fue posible obtener una función pura para filtrar, ordenar y realizar un cálculo de promedio sobre el peso de los pokemones.
+
+## Test 
+
+Los test para comprobar que las funciones cumplian con su objetivo, se realizó con la librería Jest y Node.
+Se obtuvieron 100% de _statements_(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y 72% de _branches_
+(_ramas_).
+
+
 
 
 
