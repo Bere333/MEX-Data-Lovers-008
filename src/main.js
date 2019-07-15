@@ -1,7 +1,7 @@
 const data = POKEMON.pokemon;
 //Código para filtrar por tipos
 let imSelection = document.getElementById("select-type");
-imSelection.addEventListener("change", () => {
+imSelection.addEventListener("click", () => {
 let imValue = imSelection.options[imSelection.selectedIndex].value;
 //console.log(typeof imValue);
 //console.log(imValue);
@@ -12,13 +12,13 @@ let pokeFilterData = window.data.filterData(data, imValue);
 //Ordenar data filtrada
   
   let imOrdenation = document.getElementById("select-order");
-  imOrdenation.addEventListener("change", () => {
+  imOrdenation.addEventListener("click", () => {
   let imValueOrder = (imOrdenation.options[imOrdenation.selectedIndex].value);
   //console.log(imValueOrder);
   //console.log(typeof imValueOrder);
 
   let imAscent = document.getElementById("select-sortOrder");
-  imAscent.addEventListener("change", () => {
+  imAscent.addEventListener("click", () => {
     let sorValue = (imAscent.options[imAscent.selectedIndex].value);
     //console.log(sorValue);
     
@@ -79,7 +79,7 @@ let pokeFilterData = window.data.filterData(data, imValue);
 });
 
 let imSelectCompute = document.getElementById("select-computestats");
-imSelectCompute.addEventListener('change', () => {
+imSelectCompute.addEventListener('click', () => {
   //let computeValue = (imSelectCompute.options[imSelectCompute.selectedIndex].value);
   const rootCompute = document.getElementById("rootCompute");
   let pokeDataCompute = window.data.computeStats(data);

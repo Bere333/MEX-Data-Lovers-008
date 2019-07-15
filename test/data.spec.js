@@ -247,7 +247,7 @@ describe('función filtrar', () => {
     }]);
   });
 });
-//Ordenar data filtrada
+//Test para ordenar data filtrada
 //Es una función
 describe("función ordenar", () => {
   it('es una función', () => {expect(typeof window.data.sortData).toBe('function');
@@ -1044,7 +1044,7 @@ it('Debería retornar el siguiente ordenado alfabetico ascendente de dragones: D
 //Test para función de promedio
 
 });
-
+//Test para calculo de promedio de peso
 describe("función calcular promedio", () => {
   it('es una función', () => {
     expect(typeof window.data.computeStats).toBe('function');

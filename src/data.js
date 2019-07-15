@@ -25,17 +25,17 @@ sortData: (data, sortBy, sortOrder) => {
         if (a.name < b.name) {
           return -1;
         }
-        return 0;
+        //return 0;
       }
       
       if (sortBy == "id") {
         if (a.id > b.id) {
-          return 1;
+          //return 1;
         }
         if (a.id < b.id) {
           return -1;
         }
-        return 0;
+        //return 0;
       }
       
     }
@@ -67,7 +67,7 @@ computeStats:(data) => {
   }, {weight: 0});
   let sumPromedio = sumCompute.weight / data.length;
   return sumPromedio;
-  //Intento fallido
+  //Intento
   //console.log(sumCompute);
   /*
   let sumP = "";
