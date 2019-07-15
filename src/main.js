@@ -1,5 +1,4 @@
 const data = POKEMON.pokemon;
-
 //Código para filtrar por tipos
 let imSelection = document.getElementById("select-type");
 imSelection.addEventListener("change", () => {
@@ -15,16 +14,17 @@ let pokeFilterData = window.data.filterData(data, imValue);
   let imOrdenation = document.getElementById("select-order");
   imOrdenation.addEventListener("change", () => {
   let imValueOrder = (imOrdenation.options[imOrdenation.selectedIndex].value);
-  console.log(imValueOrder);
-  console.log(typeof imValueOrder);
+  //console.log(imValueOrder);
+  //console.log(typeof imValueOrder);
 
   let imAscent = document.getElementById("select-sortOrder");
   imAscent.addEventListener("change", () => {
     let sorValue = (imAscent.options[imAscent.selectedIndex].value);
-    console.log(sorValue);
+    //console.log(sorValue);
     
     let pokeDataOrder = window.data.sortData(pokeFilterData, imValueOrder, sorValue);
-    console.log(pokeDataOrder);
+    //console.log(pokeDataOrder);
+
     const root = document.getElementById("root");
 
 
@@ -36,7 +36,21 @@ let pokeFilterData = window.data.filterData(data, imValue);
     let pokeImg = element.img;
     let pokeType = element.type;
     let pokeWeaknesses = element.weaknesses;
-    //let pokeNextEvolution = element.next_evolution;
+   // let pokeEvolution = element.next_evolution;
+    //let pokePrevol = element.prev_evolution;
+    //let pokeE = () => {let evol = "";
+   //for (let name in pokeEvolution ){
+    // evol = pokeEvolution[name];
+    // return evol;
+   // }
+ // };
+   /*console.log(evol);
+   let evolP = "";
+   for (let name in pokePrevol){
+    evolP = pokePrevol[name];
+    return evolP;
+   }*/
+  
   
     str += `
     <div class="flip-container"><center>
@@ -64,3 +78,15 @@ let pokeFilterData = window.data.filterData(data, imValue);
   });
 });
 
+let imSelectCompute = document.getElementById("select-computestats");
+imSelectCompute.addEventListener('change', () => {
+  //let computeValue = (imSelectCompute.options[imSelectCompute.selectedIndex].value);
+  const rootCompute = document.getElementById("rootCompute");
+  let pokeDataCompute = window.data.computeStats(data);
+  rootCompute.innerHTML = "El promedio de peso entre poKemones es de " + pokeDataCompute;
+  console.log(pokeDataCompute);
+  console.log(`${pokeDataCompute}`);
+  
+  //`${pokeDataCompute}`;
+  
+});
