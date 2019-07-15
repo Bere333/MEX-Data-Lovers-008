@@ -1,3 +1,4 @@
+
 body {
     height: 100%;
     margin: 0;
@@ -75,7 +76,7 @@ h1{
     margin-top: 50px;
     font-size: 20px;
     border: 1px;
-    display: inline-flex; 
+    display: inline-flex;
 }
 #select-computestats{
     background-color: rgb(219, 216, 216);
@@ -84,10 +85,11 @@ h1{
     margin-top: 50px;
     font-size: 20px;
     border: 1px;
-    display: inline-flex; 
+    display: inline-flex;
 }
 #first-section{
     text-align: center;
+  
 }
 
 h2{
@@ -100,7 +102,7 @@ p{
 }
 
 
-
+/*TARJETAS DE POKEMONES*/
 .flip-container{
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -155,3 +157,150 @@ p{
       #7e8fdd 20px
     ); 
   }
+
+
+@media screen and (max-width: 375 x 812 px){
+    .w3-col{
+      display: block;
+      width: 25%;  
+    }
+}
+
+
+@media screen and (max-width:1366 x 768 px ){
+    /*.w3-row{
+        display: block;
+    }*/
+    .w3-col{
+        display: block;
+        width: 25%;
+    }
+    .w3-col-1{
+        display: block;
+    }
+    .w3-col-2{
+        display: block;
+    }
+}
+
+ /* MODAL*/
+
+ .flex{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  /* .info{
+    padding: 300px;
+    color: aqua;
+    text-align: center;
+  } */
+
+  .info{
+      text-align: start;
+  }
+
+
+ 
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+ 
+  }
+ 
+  a:hover{
+    background: black; color: white; border: 1px solid black;
+ 
+  }
+
+ 
+  .modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.452);
+ 
+  }
+ 
+  .contenido-modal{
+    position: relative;
+    background-color: #fafafa;
+    /* background-color: #fefefe; */
+    margin: auto;
+    width: 30%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    animation-name: modal;
+    animation-duration: 1s;
+ 
+  }
+ 
+  @keyframes modal{
+    from{top:-330px; opacity:0;}
+    to{top:0; opacity:1; }
+  }
+ 
+  .close{
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: bold;
+ 
+ 
+  }
+ 
+  .close:hover{
+    color: #7f8c8d;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ 
+  .modal-header, .footer{
+    padding: 8px;
+    background: rgb(207, 0, 0);
+    /* background: #34495e; */
+    /* color: #f2f2f2; */
+    color: black;
+ 
+  }
+ 
+  p{
+    text-align: justify;
+ 
+  }
+ 
+  .modal-body{
+    padding: 20px 16px;
+ 
+  }
+
+  @media screen and (max-width:539px){
+    .selection{
+        width: 70%;
+    }
+
+    .flip-container{
+        width: 60%;
+    }
+
+    .card{
+        width:60%;
+    }
+
+    p{
+        width:100%;
+
+    }
+}
