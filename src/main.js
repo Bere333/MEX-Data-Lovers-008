@@ -88,9 +88,10 @@ imSelectCompute.addEventListener('click', () => {
     <div class="card">
     <div class="front">
     <h2>Promedio de Peso</h2>
+    <img src="http://pixelartmaker.com/art/e0087f122eee65d.png" width:"10" heigth="10"></img>
     </div>
     <div class="back">
-    <p>El promedio de peso entre pokemones es de: ${pokeDataCompute}</p>
+    <p><center>El promedio de peso entre pokemones es de: ${pokeDataCompute}<center></p>
     </div>
     </div>
     </center></div>
@@ -101,4 +102,26 @@ imSelectCompute.addEventListener('click', () => {
   
   //`${pokeDataCompute}`;
   
+});
+
+let modal= document.getElementById("miModal");
+let flex= document.getElementById("flex");
+let abrir= document.getElementById("abrir");
+let cerrar= document.getElementById("close");
+
+
+abrir.addEventListener("click", function(){
+ modal.style.display = "block";
+
+});
+
+cerrar.addEventListener("click", function(){
+ modal.style.display = "none";
+
+});
+
+window.addEventListener("click", function(e){
+ if(e.target == flex){
+   modal.style.display = "none";
+ }
 });
