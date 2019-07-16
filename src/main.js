@@ -19,6 +19,8 @@ let pokeFilterData = window.data.filterData(data, imValue);
 
   let imAscent = document.getElementById("select-sortOrder");
   imAscent.addEventListener("click", () => {
+    let imgOcul = document.getElementById("pokebola");
+    imgOcul.style.display = "none";
     let sorValue = (imAscent.options[imAscent.selectedIndex].value);
     //console.log(sorValue);
     
@@ -80,6 +82,8 @@ let pokeFilterData = window.data.filterData(data, imValue);
 
 let imSelectCompute = document.getElementById("select-computestats");
 imSelectCompute.addEventListener('click', () => {
+  let imgOcul = document.getElementById("pokebola");
+  imgOcul.style.display = "none";
   //let computeValue = (imSelectCompute.options[imSelectCompute.selectedIndex].value);
   const rootCompute = document.getElementById("rootCompute");
   let pokeDataCompute = window.data.computeStats(data);
