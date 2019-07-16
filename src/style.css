@@ -47,7 +47,7 @@ h1{
 }
 
 #select-type{
-    background-color: rgb(219, 216, 216);
+    background-color: rgb(67, 155, 238);
     font-family: 'Luckiest Guy', cursive;
     /* font-size: 40px; */
     margin-top: 50px;
@@ -61,7 +61,7 @@ h1{
 }
 
 #select-order{
-    background-color: rgb(219, 216, 216);
+    background-color: rgb(238, 234, 24);
     font-family: 'Luckiest Guy', cursive;
     /* font-size: 40px; */
     margin-top: 50px;
@@ -70,7 +70,10 @@ h1{
     display: inline-flex;
 }
 #select-sortOrder{
-    background-color: rgb(219, 216, 216);
+  background-color: rgb(196, 196, 196)
+}
+#select-sortOrder{
+    background-color:  rgb(67, 155, 238);;
     font-family: 'Luckiest Guy', cursive;
     /* font-size: 40px; */
     margin-top: 50px;
@@ -79,7 +82,10 @@ h1{
     display: inline-flex;
 }
 #select-computestats{
-    background-color: rgb(219, 216, 216);
+  background-color: rgb(196, 196, 196)
+}
+#select-computestats{
+    background-color:  rgb(238, 234, 24);
     font-family: 'Luckiest Guy', cursive;
     /* font-size: 40px; */
     margin-top: 50px;
